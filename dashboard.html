@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,400..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&family=Playfair+Display:wght@400..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="dashboard.html" class="sb">Skill Bridge</a>
+        <ul>
+          <li><a href="dashboard.html">Home</a></li>
+          <li><a href="index.html">Logout</a></li>
+          <li><a href="mentors.html">Mentors</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="dashboard">
+      <h1 class="wel">Welcome Student!</h1>
+      <h2>Let's get you a perfect Menor!</h2>
+
+      <h2>Business</h2>
+
+      <!-- First Row of Carousel Tiles -->
+      <div class="carousel-row">
+        <div class="carousel-container">
+          <div class="carousel">
+            <div class="tile">
+              <img src="./assests/image1.png" alt="Tile Image 1" />
+            </div>
+            <div class="tile">
+              <img src="./assests/image2.png" alt="Tile Image 2" />
+            </div>
+            <div class="tile">
+              <img src="./assests/image3.jpg" alt="Tile Image 3" />
+            </div>
+          </div>
+          <button class="carousel-btn prev" onclick="moveCarousel(0, -1)">
+            &#10094;
+          </button>
+          <button class="carousel-btn next" onclick="moveCarousel(0, 1)">
+            &#10095;
+          </button>
+        </div>
+      </div>
+
+      <h2>Engineering</h2>
+
+      <!-- Second Row of Carousel Tiles -->
+      <div class="carousel-row">
+        <div class="carousel-container">
+          <div class="carousel">
+            <div class="tile">
+              <img src="./assests/image5.jpeg" alt="Tile Image 4" />
+            </div>
+            <div class="tile">
+              <img src="./assests/image6.jpeg" alt="Tile Image 5" />
+            </div>
+            <div class="tile">
+              <img src="./assests/image8.jpg" alt="Tile Image 6" />
+            </div>
+          </div>
+          <button class="carousel-btn prev" onclick="moveCarousel(1, -1)">
+            &#10094;
+          </button>
+          <button class="carousel-btn next" onclick="moveCarousel(1, 1)">
+            &#10095;
+          </button>
+        </div>
+      </div>
+
+      <h1 class="started">Want to Get Started?</h1>
+      <a href="mentors.html"><button class="find">Find a Mentor ➡️</button></a>
+    </main>
+
+    <script src="carousel.js"></script>
+  </body>
+</html>
